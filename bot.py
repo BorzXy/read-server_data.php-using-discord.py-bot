@@ -25,4 +25,4 @@ async def read(ctx, message):
     print(reader)
     await ctx.send(reader.text)
 
-daniloboi.run('Nzg3Njg1NzY4MDEyNjI3OTg4.X9YjiQ.3Ut5NMYkUfdM4m4p7HCoA9JFXJE')
+daniloboi.run('Your bot token')
