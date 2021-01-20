@@ -25,5 +25,6 @@ async def read(ctx, message):
     reader = requests.post(f'http://{message}/growtopia/server_data.php')
     print(reader)
     await ctx.send(f'```css\n{reader.text}\n```')
+#Update 1
 
 daniloboi.run('Your bot token')
