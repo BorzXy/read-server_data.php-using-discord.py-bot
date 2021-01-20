@@ -20,9 +20,10 @@ async def test(ctx):
 
 @daniloboi.command()
 async def read(ctx, message):
-    await ctx.send('Wait 10 sec...')
+    await ctx.message.delete()
+    await ctx.send('Please Wait...')
     reader = requests.post(f'http://{message}/growtopia/server_data.php')
     print(reader)
-    await ctx.send(reader.text)
+    await ctx.send(f'```css\n{reader.text}\n```')
 
 daniloboi.run('Your bot token')
